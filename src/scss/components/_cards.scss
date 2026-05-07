@@ -1,0 +1,54 @@
+@use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as vars;
+
+.card,
+.info-card,
+.project-card,
+.skill-card,
+.contact-form,
+.contact-details,
+.glass {
+  @include mixins.glass-card;
+  padding: 2rem;
+}
+
+.card {
+  min-height: 240px;
+}
+
+.project-grid,
+.grid-3,
+.skills-grid,
+.grid-2 {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-3,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-label {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: vars.$accent;
+}

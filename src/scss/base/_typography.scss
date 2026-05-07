@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as vars;
+
+body {
+  font-family: vars.$font-body;
+  color: vars.$text;
+  background: vars.$bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: vars.$font-display;
+  color: vars.$text;
+}
+
+p {
+  margin: 0;
+  color: vars.$text-muted;
+}
+
+.section-title {
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1.05;
+}
+
+.section-sub {
+  max-width: 640px;
+  margin-top: 1rem;
+  color: vars.$text-muted;
+}

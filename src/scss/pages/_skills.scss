@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as vars;
+
+.skills-grid {
+  margin-top: 2rem;
+}
+
+.skill-card {
+  min-height: 220px;
+}
+
+.skill-bars {
+  margin-top: 2.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.skill-bar {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.skill-title {
+  font-weight: 600;
+  color: vars.$text;
+}
+
+.skill-track {
+  width: 100%;
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, vars.$accent, vars.$accent-soft);
+}

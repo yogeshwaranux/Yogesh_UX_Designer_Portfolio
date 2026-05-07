@@ -1,0 +1,60 @@
+@use '../abstracts/mixins' as mixins;
+@use '../abstracts/variables' as vars;
+
+body {
+  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.12), transparent 28%),
+              radial-gradient(circle at bottom left, rgba(255, 69, 0, 0.12), transparent 28%),
+              vars.$bg;
+}
+
+.container {
+  @include mixins.responsive-container;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: vars.$accent;
+  margin-bottom: 1rem;
+}
+
+.site-footer {
+  padding: 40px 0;
+  color: vars.$text-muted;
+}
+
+.footer-inner {
+  @include mixins.responsive-container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.footer-nav a {
+  color: vars.$text-muted;
+}
+
+.footer-nav a:hover {
+  color: vars.$accent;
+}
+
+@media (max-width: 780px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

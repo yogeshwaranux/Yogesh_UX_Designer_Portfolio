@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as vars;
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 240px;
+}
+
+.project-card h3 {
+  margin-top: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card p {
+  color: vars.$text-muted;
+}

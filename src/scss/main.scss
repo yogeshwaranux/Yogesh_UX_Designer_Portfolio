@@ -1,0 +1,29 @@
+@use 'abstracts/variables' as vars;
+@use 'abstracts/mixins' as mixins;
+@use 'base/reset';
+@use 'base/typography';
+@use 'components/navbar';
+@use 'components/buttons';
+@use 'components/cards';
+@use 'components/cursor';
+@use 'pages/home';
+@use 'pages/about';
+@use 'pages/skills';
+@use 'pages/projects';
+@use 'pages/contact';
+@use 'themes/dark';
+
+body {
+  min-height: 100vh;
+  background: vars.$bg;
+  color: vars.$text;
+}
+
+.page-shell,
+.page-home,
+.page-about,
+.page-work,
+.page-skills,
+.page-contact {
+  min-height: 100vh;
+}

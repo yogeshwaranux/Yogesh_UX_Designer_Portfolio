@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Yogesh Waran</title>
+  <meta name="description" content="Contact Yogesh Waran for design collaborations, freelance work, or product projects." />
+  <link rel="icon" href="/assets/icons/favicon.ico" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" /></noscript>
+  <link rel="stylesheet" href="/src/scss/main.scss" />
+</head>
+<body class="page-contact">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Yogesh</a>
+      <nav class="site-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link" href="work.html">Work</a>
+        <a class="nav-link" href="skills.html">Skills</a>
+        <a class="nav-link active" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-section">
+      <div class="container grid-2">
+        <div>
+          <span class="section-tag">Contact</span>
+          <h1 class="section-title">Let’s build something great together.</h1>
+          <p class="section-sub">Send a note about your project, availability, or just say hello.</p>
+          <div class="contact-details glass">
+            <div class="contact-item">
+              <strong>Email</strong><br />
+              <a href="mailto:yogeshwaran.ux@gmail.com" class="contact-link email-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+                  <path d="m22 7-10 5L2 7"></path>
+                </svg>
+                yogeshwaran.ux@gmail.com
+              </a>
+            </div>
+            <div class="contact-item">
+              <strong>WhatsApp</strong><br />
+              <a href="https://wa.me/message/KD6TDWHEKHKAD1" class="contact-link whatsapp-link" target="_blank" rel="noopener noreferrer">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a6.963 6.963 0 0 0-7.145 7.192c.045 1.318.362 2.605.976 3.776L2.98 19.818l2.274-.757c1.136.699 2.447 1.071 3.806 1.071h.004c3.86 0 6.99-3.131 6.99-6.991 0-1.866-.736-3.622-2.074-4.941M12 0C5.373 0 0 5.373 0 12c0 2.302.62 4.561 1.795 6.535L0 24l6.656-2.196C9.284 23.19 10.604 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0"/>
+                </svg>
+                Message on WhatsApp
+              </a>
+            </div>
+            <div class="contact-item">
+              <strong>Location</strong><br />
+              <span class="contact-text">Bangalore, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contactForm" class="glass contact-form">
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" placeholder="Tell me about your project" required></textarea>
+          </label>
+          <button class="btn btn-primary" type="submit">Send message</button>
+          <p class="form-success">Thanks! Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Available for freelance and team projects.</p>
+      <nav class="footer-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="mailto:yogeshwaran.ux@gmail.com">Email</a>
+        <a href="https://wa.me/message/KD6TDWHEKHKAD1" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/js/main.js" defer></script>
+</body>
+</html>
