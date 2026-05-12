@@ -3,6 +3,13 @@ import path from 'path';
 
 export default defineConfig({
   root: '.',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler',
+      },
+    },
+  },
   server: {
     headers: {
       'Cache-Control': 'public, max-age=3600'
