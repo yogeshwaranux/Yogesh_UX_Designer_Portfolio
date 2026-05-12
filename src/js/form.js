@@ -11,3 +11,16 @@ export function initContactForm() {
     setTimeout(() => successMessage.classList.remove('visible'), 4200);
   });
 }
+
+// Optimize PDF downloads
+export function initDownloadOptimization() {
+  document.querySelectorAll('a[download]').forEach((link) => {
+    if (link.href.includes('.pdf')) {
+      link.addEventListener('click', (e) => {
+        // Ensure immediate download without opening in browser
+        link.target = '';
+        link.rel = 'noopener noreferrer';
+      });
+    }
+  });
+}

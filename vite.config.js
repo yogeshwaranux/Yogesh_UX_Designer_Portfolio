@@ -3,6 +3,11 @@ import path from 'path';
 
 export default defineConfig({
   root: '.',
+  server: {
+    headers: {
+      'Cache-Control': 'public, max-age=3600'
+    }
+  },
   build: {
     outDir: 'dist',
     rollupOptions: {
