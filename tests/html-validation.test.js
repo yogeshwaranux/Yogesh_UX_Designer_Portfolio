@@ -23,7 +23,7 @@ describe('HTML Validation and Links', () => {
 
     it('should have resume PDF in public/assets/docs', () => {
       const projectRoot = process.cwd();
-      const resumePath = path.join(projectRoot, 'public', 'assets', 'docs', 'Yogesh_resume.pdf');
+      const resumePath = path.join(projectRoot, 'public', 'assets', 'docs', 'Yogesh_resume_1.pdf');
       expect(fs.existsSync(resumePath)).toBe(true);
     });
 
@@ -73,9 +73,9 @@ describe('HTML Validation and Links', () => {
       });
     });
 
-    it('should have resume download links pointing to /assets/docs/Yogesh_resume.pdf', () => {
+    it('should have resume download links pointing to /assets/docs/Yogesh_resume_1.pdf', () => {
       const content = readHtmlFile('index.html');
-      const resumeLinks = content.match(/href="\/assets\/docs\/Yogesh_resume\.pdf"/g);
+      const resumeLinks = content.match(/href="\/assets\/docs\/Yogesh_resume_1\.pdf"/g);
       expect(resumeLinks).toBeTruthy();
       expect(resumeLinks.length).toBeGreaterThan(0);
     });

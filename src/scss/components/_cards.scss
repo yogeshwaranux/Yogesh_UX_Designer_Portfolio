@@ -52,3 +52,19 @@
   text-transform: uppercase;
   color: vars.$accent;
 }
+
+/* ══ LIGHT MODE ══ */
+[data-theme="light"] .card,
+[data-theme="light"] .info-card,
+[data-theme="light"] .project-card,
+[data-theme="light"] .skill-card,
+[data-theme="light"] .contact-form,
+[data-theme="light"] .contact-details,
+[data-theme="light"] .glass {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="light"] .project-label {
+  color: vars.$light-accent;
+}

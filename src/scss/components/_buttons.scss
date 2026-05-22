@@ -32,3 +32,22 @@
 .btn-outline:hover {
   background: rgba(255, 255, 255, 0.04);
 }
+
+/* ══ LIGHT MODE ══ */
+[data-theme="light"] .btn-primary {
+  background: vars.$light-accent;
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.15);
+}
+
+[data-theme="light"] .btn-primary:hover {
+  background: vars.$light-accent-strong;
+}
+
+[data-theme="light"] .btn-outline {
+  color: vars.$light-text;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .btn-outline:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
